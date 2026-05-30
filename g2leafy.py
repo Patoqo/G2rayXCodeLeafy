@@ -14,10 +14,6 @@ import shutil
 import textwrap
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-DEFAULT_CONFIG_IPS = [
-    {"ip": "162.159.192.1", "name": "G2Leafy CHANGE THIS TO THE SCANNED WORKING IP"},
-]
-
 LOCAL_VERSION = "2.0.0"
 AUTO_UPDATE = True
 UPSTREAM_REPO = "Code-Leafy/G2rayXCodeLeafy"
@@ -84,6 +80,9 @@ SERVER_NAME = f"G2Leafy | {GITHUB_USER}"
 PORT_DOMAIN = f"{CODESPACE_NAME}-{XRAY_PORT}.app.github.dev"
 SUB_DOMAIN = f"{CODESPACE_NAME}-{SUB_PORT}.app.github.dev"
 
+DEFAULT_CONFIG_IPS = [
+    {"ip": PORT_DOMAIN, "name": "🍃 G2Leafy | Auto Best"},
+]
 
 def fmt_gb(b):
     return f"{(b / 1073741824):.2f}"
